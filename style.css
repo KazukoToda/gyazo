@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+    position: absolute;
+}
+
+.square {
+    width: 700px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.textbox {
+    width: 660px;
+    height: 120px;
+    background: linear-gradient(
+        -45deg,
+        #ffffff 25%, #F0F1F6 25%,
+        #F0F1F6 50%, #ffffff 50%,
+        #ffffff 75%, #F0F1F6 75%,
+        #F0F1F6
+    );
+    background-size: 24px 24px;
+    position: absolute;
+    top: 36px;
+    left: 20px;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 44px;
+    text-shadow: 1px 2px 3px #808080;
+    color: navy;
+    position: relative;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.top {
+    height: 6px;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    border-top: solid 8px;
+    border-bottom: solid 2px;
+    border-left: none;
+    border-right: none;
+    border-color: navy;
+    margin: 0;
+}
+
+.top::after {
+    position: absolute;
+    top: -0.6em;
+    left: 44%;
+    display: inline-block;
+    content: 'Review';
+    color: navy;
+    background: #ffffff;
+    overflow: visible;
+    padding: 0 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bottom {
+    height: 6px;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    border-top: solid 2px;
+    border-bottom: solid 8px;
+    border-left: none;
+    border-right: none;
+    border-color: navy;
+    margin: 0;
+}
